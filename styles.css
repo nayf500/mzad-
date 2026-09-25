@@ -1,0 +1,72 @@
+*{box-sizing:border-box}
+:root{
+  --green:#006a3d;--green2:#0b7b4b;--dark:#06452e;--yellow:#f7a900;
+  --cream:#f8f5ed;--border:#d8d2c5;--text:#1e2924;
+}
+html,body{margin:0;padding:0;background:#ececec;font-family:Tahoma,Arial,sans-serif;color:var(--text)}
+body{min-height:100vh}
+button,input{font:inherit}
+button{cursor:pointer}
+.page{max-width:1060px;margin:auto;background:#f3f3f1;min-height:100vh;box-shadow:0 0 25px #0002}
+.topbar{background:#fff;border-bottom:1px solid #ddd;min-height:88px;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:52px;height:52px;border:2px solid #9e9e9e;border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:30px;background:#fff}
+.brand-title{font-size:22px;font-weight:800}
+.brand-sub{font-size:12px;color:#777;margin-top:3px}
+.top-actions{display:flex;align-items:center;gap:12px}
+.outline-btn{border:1px solid #bbb;background:white;border-radius:10px;padding:11px 15px;color:#555}
+.contact{border-right:1px solid #ddd;padding-right:14px;text-align:right}
+.contact small{display:block;color:#777}
+.contact strong{font-size:13px}
+.content{padding:14px 20px 40px}
+.hero-grid{display:grid;grid-template-columns:1.7fr .9fr;gap:10px}
+.auction-card{background:linear-gradient(180deg,#087747,#005b37);border-radius:13px;padding:12px 14px;color:white;box-shadow:0 2px 5px #0002}
+.status-pill{display:inline-block;background:#187f52;border:1px solid #77ad92;border-radius:16px;padding:6px 13px;font-size:12px}
+.timer{text-align:center;font-size:48px;line-height:1.15;font-weight:900;letter-spacing:1px}
+.progress{height:10px;background:#eee;border-radius:99px;overflow:hidden;margin:4px 0 7px}
+.progress span{display:block;height:100%;width:100%;background:var(--yellow);border-radius:99px}
+.ready{text-align:center;font-size:12px;margin-bottom:8px}
+.auction-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.action-btn{border:1px solid #5caa89;border-radius:9px;background:#08744a;color:white;padding:9px;font-weight:700}
+.action-btn.yellow{background:#f2a800;border-color:#e0a100;color:#fff}
+.side-panel{background:white;border:1px solid #ddd;border-radius:11px;padding:10px;box-shadow:0 2px 5px #0001}
+.sale-badge{display:inline-block;background:#087747;color:white;padding:8px 18px;border-radius:8px;font-weight:800}
+.side-title{font-weight:800;font-size:16px;margin:12px 0}
+.side-row{display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:8px 2px;font-size:13px}
+.green-text{color:var(--green)}
+.contact-strip{margin:7px 0;background:#fff;border:1px solid #ddd;border-radius:8px;text-align:center;padding:8px;color:#555}
+.contact-strip a{color:#164c98;font-weight:900;font-size:18px;margin:0 8px}
+.plate-heading{background:var(--green);color:#fff;text-align:center;border-radius:8px;padding:8px;font-size:15px;margin-top:8px}
+.price-card{background:white;border:1px solid #d7d0c3;border-radius:10px;margin-top:7px;text-align:center;padding:8px}
+.price{font-size:48px;font-weight:900;color:#1d5540}
+.price span{font-size:17px;font-weight:600;color:#555}
+.plate-card{margin-top:7px;background:#f8f8f6;border:2px solid #b9b5aa;border-radius:8px;display:grid;grid-template-columns:1fr .45fr 1.35fr;min-height:130px;overflow:hidden;direction:ltr}
+.plate-card>div{border-right:1px solid #777;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.plate-left{font-size:33px;font-weight:900}.plate-left .latin{font-size:23px;margin-top:7px}
+.plate-middle{font-size:12px}.palm-symbol{font-size:28px;color:#222}.ksa{font-size:10px;margin-top:-3px}.ksa-small{font-size:8px}
+.plate-right{border-right:0!important}.arabic.letters{font-size:33px;font-weight:900;letter-spacing:8px;direction:rtl}.latin.letters{font-size:23px;letter-spacing:6px;margin-top:7px}
+.hadith-card{margin-top:8px;background:linear-gradient(90deg,#056c3e,#08774b);color:white;border-radius:8px;padding:10px;display:flex;align-items:center;gap:12px;font-size:13px}
+.hadith-card p{margin:4px 0 0;color:#f4f4f4;font-size:11px}.coin{width:32px;height:32px;border-radius:50%;background:#e2ac2e;color:#fff;display:grid;place-items:center;flex:none}
+.donation{margin-right:auto;background:#0a8251;border-radius:8px;padding:7px 10px;white-space:nowrap}
+.info-card{margin-top:8px;background:#fffdf6;border:1px solid #ded7c9;border-radius:8px;padding:14px;text-align:center;line-height:1.8;font-size:13px}
+.info-title{font-weight:900}.info-card p{margin:5px 0 0}
+.comments-head{margin-top:12px;background:var(--green);color:#fff;border-radius:8px;padding:9px 13px;font-weight:800;display:flex;justify-content:space-between}
+.live-dot{color:#7cf0b5}
+.comments{background:white;border:1px solid #ddd;border-radius:8px;margin-top:6px;overflow:hidden}
+.comment{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid #eee}.comment:last-child{border-bottom:0}
+.avatar{width:34px;height:34px;border-radius:50%;background:#eee;display:grid;place-items:center;font-weight:800}.comment p{margin:2px 0;color:#777;font-size:12px}.comment time{margin-right:auto;color:#999;font-size:10px}
+.live-card{margin-top:10px;background:white;border:1px solid #ddd;border-radius:8px;overflow:hidden}
+.live-title{background:#0a7548;color:#fff;padding:9px 12px;font-weight:800}
+.live-placeholder{height:230px;background:linear-gradient(145deg,#111,#401d12 45%,#090909);display:grid;place-items:center;color:#fff;text-align:center;font-size:25px;font-weight:900;position:relative}
+.lion{font-size:70px;opacity:.85}.live-placeholder small{position:absolute;bottom:8px;left:10px;background:#233a3a;border-radius:12px;padding:4px 8px;font-size:9px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);background:#123;color:#fff;padding:11px 18px;border-radius:10px;opacity:0;transition:.25s;z-index:30}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.modal{position:fixed;inset:0;background:#0008;display:grid;place-items:center;padding:20px;z-index:50}.modal.hidden{display:none}.modal-box{width:min(420px,100%);background:#fff;border-radius:14px;padding:22px;position:relative}.close{position:absolute;left:12px;top:8px;border:0;background:none;font-size:30px}.modal-box h2{margin-top:0}.modal-box label{display:block;margin:14px 0;font-weight:700}.modal-box input{width:100%;padding:11px;border:1px solid #ccc;border-radius:8px;margin-top:6px}.save-btn{width:100%;background:var(--green);color:#fff;border:0;border-radius:9px;padding:12px;font-weight:800}
+
+@media(max-width:760px){
+  .topbar{padding:10px 12px;min-height:74px}.brand-title{font-size:15px}.brand-sub{font-size:9px}.brand-mark{width:42px;height:42px;font-size:23px}
+  .top-actions{gap:5px}.outline-btn{padding:8px;font-size:10px}.contact{display:none}
+  .content{padding:9px 10px 30px}.hero-grid{grid-template-columns:1fr}
+  .side-panel{order:-1}.timer{font-size:44px}.price{font-size:42px}.plate-card{min-height:115px}
+  .arabic.letters{font-size:27px;letter-spacing:5px}.plate-left{font-size:29px}
+  .hadith-card{font-size:11px}.donation{font-size:9px;padding:5px}
+}
